@@ -1,0 +1,55 @@
+h1{
+    text-align: center;
+
+    background-color: lightyellow;
+    height: 200px;
+    width: 200px;
+
+    border-width: 10px;
+    border-radius: 25px;
+    border-style: groove;
+    border-color: pink green black red;
+    color: cornflowerblue;
+    box-shadow: black;
+}
+body{
+    background-color: coral;
+}
+
+#oLine{
+  font-family: "Coral Pixels", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+p{
+    background-color: cyan;
+    padding: 5px;
+    margin: 20px;
+
+    border: solid pink 12px;
+    
+}
+.element-with-text-border {
+  position: relative;
+  padding: 1em; /* Adjust padding as needed */
+  border: 2px solid transparent; /* Optional: for initial layout */
+}
+
+.element-with-text-border::before {
+  content: "hello Rahul"; /* The text to display */
+  position: absolute;
+  top: -0.8em; /* Adjust position to appear above the element */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white; /* Match background for a "cut-out" effect */
+  padding: 0 0.5em;
+  font-size: 0.8em;
+  color: rgb(74, 235, 90);
+  border: 2px solid black; /* Optional: for a border around the text */
+}
+/* this is universal method to remove all padding which is inbuilt in the page  */
+
+*{
+    margin: 0px;
+    padding: 0%;
+}
