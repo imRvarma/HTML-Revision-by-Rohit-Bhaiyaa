@@ -1,0 +1,23 @@
+/* this is used for remove padding and marging from the page , it is universal method to remove padding from the page */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* h2{
+    background-color: blueviolet;
+    position: relative;
+    left: 100px;
+    top: 100px;
+} */
+/* h3{
+    position: fixed;
+    top: 0px;
+} */
+/* sticky ka use karte hai ki bich ka koi topic ko jab scroll kar rahe usko jab top pr jaye to oo fixed ho jaye
+e.g: */
+h2{
+    background-color: brown;
+    position: sticky;
+    top: 0px;
+}
