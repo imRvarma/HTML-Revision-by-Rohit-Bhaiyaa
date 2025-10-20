@@ -1,0 +1,29 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+.container{
+    background-color: cornflowerblue;
+    border-radius: 45px;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    position: fixed;
+    top: 100px;
+}
+.line1{
+    width: 300px;
+    height: 50px;
+    background-color: yellow;
+    position: absolute;
+    top: 65px;
+}
+.line2{
+    width: 45px;
+    height: 200px;
+    background-color: yellow;
+    position:absolute;
+    left: 75px;
+}
