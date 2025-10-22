@@ -9,47 +9,123 @@
 <body>
     <div class="main-container">
         <!-- side-bar -->
-         <div class="side-bar">
+        <div class="side-bar">
             <!-- profile -->
-             <div class="profile">
+            <div class="profile">
                 <img src="./RAHUL1.jpg" alt="profile-image">
                 <h2>Varma Rahul</h2>
                 <p>Frontend Designer</p>
-             </div>
-             <!-- contact -->
-              <div class="contact">
+            </div>
+            <!-- contact -->
+            <div class="contact">
                 <div class="email">
                     <h3 class="label">Email</h3><br>
                     <a href="mailto:rahulichari@gmail.com" class="value">rahulichari@gmail.com</a>
                 </div>
                 <div class="phone">
-                    <h3 class="label">phone</h3><br>
+                    <h3 class="label">Phone</h3><br>
                     <a href="tel:+917061002747" class="value">7061002747</a>
                 </div>
                 <div class="location">
-                <h3 class="label">Location</h3><br> 
-                <p class="value">india,ARA(bhojpur)</p>
+                    <h3 class="label">Location</h3><br> 
+                    <p class="value">India, ARA (Bhojpur)</p>
                 </div>
-              </div>
-              <!-- social media -->
-               <div class="social">
+            </div>
+            <!-- social media -->
+            <div class="social">
                 <a href="https://x.com/GLovruu706"><img src="https://simpleicons.org/icons/x.svg" alt="X"></a>
                 <a href="https://github.com/imRvarma"><img src="https://simpleicons.org/icons/github.svg" alt="Github"></a>
                 <a href="https://leetcode.com/u/QFngLFzgPC/"><img src="https://simpleicons.org/icons/leetcode.svg" alt="Leetcode"></a>
-                <a href="https://www.instagram.com/varma.imrahul?igsh=a3FiZjFwMTc3a2dl"><img src="https://cdn.iconscout.com/icon/free/png-512/free-instagram-logo-icon-svg-download-png-498425.png?f=webp&w=512" alt="Instgram"></a>
-               </div>
-         </div>
+                <a href="https://www.instagram.com/varma.imrahul?igsh=a3FiZjFwMTc3a2dl"><img src="https://cdn.iconscout.com/icon/free/png-512/free-instagram-logo-icon-svg-download-png-498425.png?f=webp&w=512" alt="Instagram"></a>
+            </div>
+        </div>
 
-         <!-- main-content -->
-          <div class="main-content">
+        <!-- main-content -->
+        <div class="main-content">
+            <div id="Navigation">
+                <nav>
+                    <div class="nav-links">
+                        <a href="#Home" class="active">Home</a>
+                        <a href="#About">About us</a>
+                        <a href="#Skill">Skill</a>
+                        <a href="#Project">Project</a>
+                    </div>
+
+                    <!-- 🌙 Theme Toggle Button (aligned properly in line) -->
+                    <button type="button" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="1.2em" height="1.2em" fill="currentColor" stroke-linecap="round" viewBox="0 0 32 32">
+                            <clipPath id="theme-toggle__classic__cutout">
+                                <path d="M0-5h30a1 1 0 0 0 9 13v24H0Z"></path>
+                            </clipPath>
+                            <g clip-path="url(#theme-toggle__classic__cutout)">
+                                <circle cx="16" cy="16" r="9.34"></circle>
+                                <g stroke="currentColor" stroke-width="1.5">
+                                    <path d="M16 5.5v-4"></path>
+                                    <path d="M16 30.5v-4"></path>
+                                    <path d="M1.5 16h4"></path>
+                                    <path d="M26.5 16h4"></path>
+                                    <path d="m23.4 8.6 2.8-2.8"></path>
+                                    <path d="m5.7 26.3 2.9-2.9"></path>
+                                    <path d="m5.8 5.8 2.8 2.8"></path>
+                                    <path d="m23.4 23.4 2.9 2.9"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                </nav>
+            </div>
+
+            <div class="live">
+                <marquee id="l-project" style="padding: 10px;margin-top: 0px;"> -----Live project name-----</marquee>
+                <marquee id="lp-name" direction="right" behavior="alternate" style="padding: 20px; margin-top: 0px;">
+                    Live : Real-Estate Website! & Salon Website! 
+                </marquee>
+            </div>
+
             <!-- home -->
-            <!-- about -->
-            <!-- skill -->
-            <!-- project -->
-            <!-- portfolio -->
-            
+            <div id="Home">
+                <h2 class="heading">Home</h2>
+                
+                <div class="hero">
+                    <h1>Hello, I'm <span>Varma Rahul</span></h1>
+                    <h2>Frontend Developer & UI Designer</h2>
+                    <p>
+    I love creating clean, responsive, and user-friendly websites that
+    bring ideas to life with HTML, CSS & JavaScript.
+                     </p>
+                     <a href="#Project" class="btn">View My Projects 🚀</a>
+                    </div>
 
-          </div>
+            </div>
+            <!-- about -->
+            <div id="About"></div>
+            <!-- skill -->
+            <div id="Skill"></div>
+            <!-- project -->
+            <div id="Project"></div>
+            <!-- services -->
+            <div id="Service"></div>
+        </div>
     </div>
+
+    <!-- 🧠 JavaScript for Theme Toggle -->
+    <script>
+        const toggleBtn = document.querySelector('.theme-toggle');
+        const body = document.body;
+
+        // load saved theme
+        if (localStorage.getItem('theme') === 'light') {
+            body.classList.add('light-theme');
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            body.classList.toggle('light-theme');
+            if (body.classList.contains('light-theme')) {
+                localStorage.setItem('theme', 'light');
+            } else {
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
 </body>
 </html>
