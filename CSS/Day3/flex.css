@@ -1,0 +1,20 @@
+.container{
+    background-color: antiquewhite;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+.first{
+    background-color: aquamarine;
+}
+.second{
+    background-color:blue;
+}
+.third{
+    background-color: blueviolet;
+}
+.fourth{
+    background-color: cadetblue;
+}
