@@ -1,0 +1,27 @@
+.container{
+    background-color: antiquewhite;
+    display:flex;
+    height: 600px;
+    flex-direction:row;
+    /* flex-direction: row-reverse; */
+    justify-content: center; /* it always work on the main axis , aur main axix flex ka direction decide karta hai*/
+    /* align item work around cross axis */
+    align-items: center;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+.first{
+    background-color: aquamarine;
+}
+.second{
+    background-color:blue;
+}
+.third{
+    background-color: blueviolet;
+}
+.fourth{
+    background-color: cadetblue;
+}
